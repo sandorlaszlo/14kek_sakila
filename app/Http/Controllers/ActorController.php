@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Actor;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -72,5 +73,32 @@ class ActorController extends Controller
             ->where('first_name', $firstname1)
             ->orWhere('first_name', $firstname2)
             ->get();
+    }
+
+    public function store(Request $request)
+    {
+
+        // return $request->all();
+        // return $request->first_name;
+        $actor = new Actor;
+        $actor->first_name = $request->first_name;
+        $actor->last_name = $request->last_name;
+        $actor->save();
+
+        return $actor;
+    }
+
+    public function destroy(Actor $actor)
+    {
+        $actor->delete();
+        return response()->noContent();
+    }
+
+    public function update(Request $request, Actor $actor)
+    {
+        $actor->first_name = $request->first_name;
+        $actor->last_name = $request->last_name;
+        $actor->save();
+        return $actor;
     }
 }

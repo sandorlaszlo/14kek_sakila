@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ActorController;
 use App\Http\Controllers\CountryController;
+use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\FilmController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -29,3 +30,13 @@ Route::get('countries/v4', [CountryController::class, 'countriesInV4']);
 
 Route::get('/films/cost/{min}/{max}', [FilmController::class, 'filmsByCost']);
 Route::get('films/actors', [FilmController::class, 'filmsWithActors']);
+
+
+Route::get('/customers', [CustomerController::class, 'index']);
+// Route::get('customers/{id}', [CustomerController::class,'show']);
+Route::get('customers/{customer}', [CustomerController::class,'show']);
+Route::post('/customers', [CustomerController::class,'store']);
+
+Route::post('/actors', [ActorController::class,'store']);
+Route::delete('/actors/{actor}', [ActorController::class,'destroy']);
+Route::put('/actors/{actor}', [ActorController::class,'update']);
