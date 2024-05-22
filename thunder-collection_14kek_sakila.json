@@ -1,0 +1,271 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "14kek_sakila",
+    "collectionId": "df041e06-b383-4f65-bcd7-92ff1d12a62a",
+    "dateExported": "2024-05-22T14:43:23.496Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "edbf80c5-d5a0-42c2-8711-a0205723e2da",
+            "colId": "df041e06-b383-4f65-bcd7-92ff1d12a62a",
+            "containerId": "",
+            "name": "get all actors",
+            "url": "http://127.0.0.1:8000/api/actors",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-05-22T13:31:54.891Z",
+            "modified": "2024-05-22T13:44:22.700Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ]
+        },
+        {
+            "_id": "0cb0d6dd-4f7d-4116-aad9-f143b9d063cb",
+            "colId": "df041e06-b383-4f65-bcd7-92ff1d12a62a",
+            "containerId": "",
+            "name": "get actors by firstname",
+            "url": "http://127.0.0.1:8000/api/actors/name/nick",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-05-22T13:44:28.566Z",
+            "modified": "2024-05-22T13:45:27.712Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ]
+        },
+        {
+            "_id": "bec5ab83-dc8f-4a1c-af97-adaeeb01c7f2",
+            "colId": "df041e06-b383-4f65-bcd7-92ff1d12a62a",
+            "containerId": "",
+            "name": "get actors by fullname",
+            "url": "http://127.0.0.1:8000/api/actors/name/nick/WAHLBERG",
+            "method": "GET",
+            "sortNum": 25000,
+            "created": "2024-05-22T14:12:43.499Z",
+            "modified": "2024-05-22T14:13:12.355Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ]
+        },
+        {
+            "_id": "c6a4983d-e044-4dd8-8ce5-f19460898caf",
+            "colId": "df041e06-b383-4f65-bcd7-92ff1d12a62a",
+            "containerId": "",
+            "name": "count actors",
+            "url": "http://127.0.0.1:8000/api/actors/count",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-05-22T13:44:32.582Z",
+            "modified": "2024-05-22T13:58:13.648Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ]
+        },
+        {
+            "_id": "2b38a241-9053-40fe-a984-18c9de11f94a",
+            "colId": "df041e06-b383-4f65-bcd7-92ff1d12a62a",
+            "containerId": "",
+            "name": "get actors by two firstnames",
+            "url": "http://127.0.0.1:8000/api/actors/name/firstnames/nick/ed",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-05-22T14:18:17.025Z",
+            "modified": "2024-05-22T14:18:42.990Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ]
+        },
+        {
+            "_id": "0082a345-ff22-4b25-b159-a05954cfd92f",
+            "colId": "df041e06-b383-4f65-bcd7-92ff1d12a62a",
+            "containerId": "",
+            "name": "count actors By Firstname",
+            "url": "http://127.0.0.1:8000/api/actors/count/name/nick",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-05-22T13:57:47.171Z",
+            "modified": "2024-05-22T14:04:47.850Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ]
+        },
+        {
+            "_id": "22a84d32-55b2-403d-8143-2a524c015561",
+            "colId": "df041e06-b383-4f65-bcd7-92ff1d12a62a",
+            "containerId": "",
+            "name": "count all actors By Firstname",
+            "url": "http://127.0.0.1:8000/api/actors/count/all",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-05-22T14:05:02.600Z",
+            "modified": "2024-05-22T14:05:21.178Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ]
+        },
+        {
+            "_id": "a0aee99c-bfaf-4731-97a1-db343da612a3",
+            "colId": "df041e06-b383-4f65-bcd7-92ff1d12a62a",
+            "containerId": "",
+            "name": "get V4 countries",
+            "url": "http://127.0.0.1:8000/api/countries/v4",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2024-05-22T14:24:57.305Z",
+            "modified": "2024-05-22T14:25:31.263Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ]
+        },
+        {
+            "_id": "e71a28e7-eaf2-46c9-b2f2-1aa99e7dd19a",
+            "colId": "df041e06-b383-4f65-bcd7-92ff1d12a62a",
+            "containerId": "",
+            "name": "get films between min and max cost",
+            "url": "http://127.0.0.1:8000/api/films/cost/25/30",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-05-22T14:34:28.987Z",
+            "modified": "2024-05-22T14:35:22.406Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ]
+        },
+        {
+            "_id": "a95c6428-a4f0-4867-9cbf-4d58597dbd18",
+            "colId": "df041e06-b383-4f65-bcd7-92ff1d12a62a",
+            "containerId": "",
+            "name": "get films with actors",
+            "url": "http://127.0.0.1:8000/api/films/actors",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2024-05-22T14:41:44.079Z",
+            "modified": "2024-05-22T14:42:02.166Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ]
+        }
+    ],
+    "ref": "EXHJZugCZ9Z7IsqQQeFVOEVwyOKDtTuJCUub1P4EXBvajsyNJZAU2QQor0oZQqF1IfcH3UAu_4VKpWNoiCz49w"
+}

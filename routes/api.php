@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\ActorController;
+use App\Http\Controllers\CountryController;
+use App\Http\Controllers\FilmController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -14,6 +17,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
+Route::get('/actors', [ActorController::class, 'actors']);
+Route::get('/actors/name/{firstname}', [ActorController::class, 'actorsByFirstname']);
+Route::get('/actors/name/{firstname}/{lastname}', [ActorController::class, 'actorsByFullname']);
+Route::get('/actors/name/firstnames/{firstname1}/{firstname2}', [ActorController::class, 'actorsByTwoFirstnames']);
+Route::get('/actors/count', [ActorController::class, 'actorsCount']);
+Route::get('/actors/count/all', [ActorController::class, 'actorsAllCountByFirstname']);
+Route::get('/actors/count/name/{firstname}', [ActorController::class, 'actorsCountByFirstname']);
+
+Route::get('countries/v4', [CountryController::class, 'countriesInV4']);
+
+Route::get('/films/cost/{min}/{max}', [FilmController::class, 'filmsByCost']);
+Route::get('films/actors', [FilmController::class, 'filmsWithActors']);
